@@ -26,6 +26,12 @@ int main() {
   float pib2;
   int pontosturisticos2;
 
+  // Adição de variáveis para densidade populacional e PIB per capita - Nível Aventureiro
+  float densidade1;
+  float densiddade2;
+  float pib_per_capita1;
+  float pib_per_capita2;
+  
 // Área para entrada de dados
   
   printf("Cadastro da Carta 1\n");
