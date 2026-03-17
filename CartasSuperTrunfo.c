@@ -28,7 +28,7 @@ int main() {
 
   // Adição de variáveis para densidade populacional e PIB per capita - Nível Aventureiro
   float densidade1;
-  float densiddade2;
+  float densidade2;
   float pib_per_capita1;
   float pib_per_capita2;
   
@@ -79,8 +79,18 @@ int main() {
 
   printf("Numero de Pontos Turisticos: ");
   scanf("%d", &pontosturisticos2);
+
+// Cálculos das novas propriedades - Nível Aventureiro
+
+  // Cálculo da densidade populacional (pupulação / área)
+  densidade1 = populacao1 / area1;
+  densidade2 = populacao2 / area2;
+
+  // Cálculo do PIB per capita (PIB / população)
+  pib_per_capita1 = pib1 / populacao1;
+  pib_per_capita2 = pib2 / populacao2;
   
-// Área para exibição dos dados da cidade
+// Área para exibição dos dados das cartas
 
   printf("\n===== CARTA 1 =====\n");
   printf("Estado: %c\n", estado1);
