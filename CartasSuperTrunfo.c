@@ -82,7 +82,7 @@ int main() {
 
 // Cálculos das novas propriedades - Nível Aventureiro
 
-  // Cálculo da densidade populacional (pupulação / área)
+  // Cálculo da densidade populacional (população / área)
   densidade1 = populacao1 / area1;
   densidade2 = populacao2 / area2;
 
@@ -101,6 +101,10 @@ int main() {
   printf("PIB: %.2f\n", pib1);
   printf("Pontos Turisticos: %d\n", pontosturisticos1);
 
+  // Exibição das novas informações calculadas
+  printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+  printf("PIB per Capita: %.2f reais\n", pib_per_capita1);
+
   printf("\n===== CARTA 2 =====\n");
   printf("Estado: %c\n", estado2);
   printf("Codigo: %s\n", codigo2);
@@ -109,6 +113,10 @@ int main() {
   printf("Area: %.2f km²\n", area2);
   printf("PIB: %.2f\n", pib2);
   printf("Pontos Turisticos: %d\n", pontosturisticos2);
+
+  // Exibição das novas informações calculadas
+  printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+  printf("PIB per Capita: %.2f reais\n", pib_per_capita2);
 
 return 0;
 } 
