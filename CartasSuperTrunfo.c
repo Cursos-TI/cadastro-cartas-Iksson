@@ -35,17 +35,15 @@ int main() {
   printf("PIB (bilhoes de reais): "); scanf("%llu", &pib2);
   printf("Numero de Pontos Turisticos: "); scanf("%d", &pontosturisticos2);
   
-// Cálculos das novas propriedades - Nível Aventureiro
+  // Cálculos
+  densidade1 = (float)populacao1 / area1;
+  densidade2 = (float)populacao2 / area2;
 
-  // Cálculo da densidade populacional (população / área)
-  densidade1 = populacao1 / area1;
-  densidade2 = populacao2 / area2;
+  pib_per_capita1 = (double)pib1 * 1e9 / populacao1;
+  pib_per_capita2 = (double)pib2 * 1e9 / populacao2;
 
-  // Cálculo do PIB per capita (PIB / população)
-  pib_per_capita1 = pib1 / populacao1;
-  pib_per_capita2 = pib2 / populacao2;
-  
-// Área para exibição dos dados das cartas
+  superpoder1 = (float)populacao1 + area1 + (float)pib1 * 1e9f + pontosturisticos1 + (float)pib_per_capita1 + (1.0f / densidade1);
+  superpoder2 = (float)populacao2 + area2 + (float)pib2 * 1e9f + pontosturisticos2 + (float)pib_per_capita2 + (1.0f / densidade2);
 
   printf("\n===== CARTA 1 =====\n");
   printf("Estado: %c\n", estado1);
