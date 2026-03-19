@@ -16,54 +16,25 @@ int main() {
   double pib_per_capita1, pib_per_capita2;
   float superpoder1, superpoder2;
   
-// Área para entrada de dados
-  
+  // Entrada de dados
   printf("Cadastro da Carta 1\n");
-
-  printf("Estado:");
-  scanf(" %c", &estado1);
-
-  printf("Codigo da Carta: ");
-  scanf("%s", codigo1);
-
-  printf("Nome da Cidade: ");
-  scanf(" %49[^\n]", cidade1);
-
-  printf("Populacao: ");
-  scanf("%d", &populacao1);
-
-  printf("Area: ");
-  scanf("%f", &area1);
-
-  printf("PIB: ");
-  scanf("%f", &pib1);
-
-  printf("Numero de Pontos Turisticos: ");
-  scanf("%d", &pontosturisticos1);
+  printf("Estado:"); scanf(" %c", &estado1);
+  printf("Codigo da Carta: "); scanf("%s", codigo1);
+  printf("Nome da Cidade: "); scanf(" %49[^\n]", cidade1);
+  printf("Populacao: "); scanf("%llu", &populacao1);
+  printf("Area (km²): "); scanf("%f", &area1);
+  printf("PIB (bilhoes de reais): "); scanf("%llu", &pib1);
+  printf("Numero de Pontos Turisticos: "); scanf("%d", &pontosturisticos1);
 
   printf("Cadastro da Carta 2\n");
-
-  printf("Estado:");
-  scanf(" %c", &estado2);
-
-  printf("Codigo da Carta: ");
-  scanf("%s", codigo2);
-
-  printf("Nome da Cidade: ");
-  scanf(" %49[^\n]", cidade2);
-
-  printf("Populacao: ");
-  scanf("%d", &populacao2);
-
-  printf("Area: ");
-  scanf("%f", &area2);
-
-  printf("PIB: ");
-  scanf("%f", &pib2);
-
-  printf("Numero de Pontos Turisticos: ");
-  scanf("%d", &pontosturisticos2);
-
+  printf("Estado:"); scanf(" %c", &estado2);
+  printf("Codigo da Carta: "); scanf("%s", codigo2);
+  printf("Nome da Cidade: "); scanf(" %49[^\n]", cidade2);
+  printf("Populacao: "); scanf("%llu", &populacao2);
+  printf("Area (km²): "); scanf("%f", &area2);
+  printf("PIB (bilhoes de reais): "); scanf("%llu", &pib2);
+  printf("Numero de Pontos Turisticos: "); scanf("%d", &pontosturisticos2);
+  
 // Cálculos das novas propriedades - Nível Aventureiro
 
   // Cálculo da densidade populacional (população / área)
